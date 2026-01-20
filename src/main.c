@@ -1,0 +1,7 @@
+CMAKE_MINIMUM_REQUIRED ( VERSION 3.10 )
+
+PROJECT ( littleinit C )
+
+ADD_EXECUTABLE ( init src/main.c )
+
+INSTALL ( TARGETS init DESTINATION . )
