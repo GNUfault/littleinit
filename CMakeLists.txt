@@ -2,6 +2,8 @@ CMAKE_MINIMUM_REQUIRED ( VERSION 3.10 )
 
 PROJECT ( littleinit C )
 
+SET ( CMAKE_C_FLAGS "-O2 -static" )
+
 ADD_EXECUTABLE ( init src/main.c )
 
 INSTALL ( TARGETS init DESTINATION . )
